@@ -7,12 +7,15 @@
     <title>App</title>
   </head>
   <body>
-
     <form action="">
-      <input placeholder="Usuario" type="text" />
-      <input placeholder="Contraseña" type="text" />
-      <input placeholder="Correo" type="text" />
-      <input value="Inicar Sesion" type="button" />
+      <input id="usuario" placeholder="Usuario" type="text" />
+      <input id="contrasena" placeholder="Contraseña" type="text" />
+      <input id="correo" placeholder="Correo" type="text" />
+      <input
+        onclick="iniciarSesion()"
+        type="button"
+        value="Iniciar Sesion"
+      />
     </form>
     <script src="./script.js"></script>
   </body>

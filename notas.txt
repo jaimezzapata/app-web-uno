@@ -1,0 +1,7 @@
+Eventos
+    Usuarios -> Eventos que desencadena un usuario al realizar una acción sobre un elemento html
+        Teclado -> keyup, keydown, onchange
+        Mouse -> onclick, ondblclick, mouseenter, mouseout
+            Embebidos -> Se llaman directamente en el html - (onclick, ondblclick)
+            Escuchador -> Se define dentro del JavaScript - (mouseenter, mouseout) blur
+    Documento -> Acciones y/o procesos que suceden por debajo del usuario
