@@ -12,3 +12,5 @@ function iniciarSesion() {
   usuarios.push(usuarioNuevo);
   console.log(usuarios);
 }
+let btnIniciar = document.getElementById("btnIniciar");
+btnIniciar.addEventListener("click", iniciarSesion);
