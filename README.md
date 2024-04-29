@@ -28,6 +28,6 @@
 
 ###
 
-<h4 align="left">✨ Eventos JavaScript (click, blur, keyUp)<br>✨ Métodos de los arreglos Arreglos (find, some, filter, map, foreEach)<br>✨ Objetos Literales<br>✨ MVC<br>✨ Expresiones regulares</h4>
+<h4 align="left">✨ Eventos JavaScript (click, blur, keyUp)<br>✨ Métodos de los arreglos (find, some, filter, map, foreEach)<br>✨ Objetos Literales<br>✨ MVC<br>✨ Expresiones regulares</h4>
 
 ###
