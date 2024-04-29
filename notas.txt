@@ -6,4 +6,11 @@ Eventos
             Escuchador -> Se define dentro del JavaScript - (mouseenter, mouseout) blur
     Documento -> Acciones y/o procesos que suceden por debajo del usuario
 
-    MVC
+
+Limpiar credenciales
+    git config --global credentials.helper
+    git config --global credentials.helper""
+    git config --global credentials.helper ""
+    git config --global credential.helper
+    git config --global credential.helper""
+    git config --global credential.helper ""
