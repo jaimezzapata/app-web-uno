@@ -1,68 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 body {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
 }
-form {
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
+
+.container {
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  padding: 5%;
 }
 
-input {
+.container:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
   width: 100%;
-  margin-bottom: 15px;
   padding: 10px;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease-in-out;
 }
 
-input:focus {
+.input-group input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: dodgerblue;
 }
 
-#btnIniciar {
-  background-color: #007bff;
-  color: #fff;
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: dodgerblue;
   border: none;
+  color: #fff;
+  font-size: 16px;
   border-radius: 4px;
-  padding: 10px 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#btnIniciar:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background-color: #007bff;
 }
 
-/* Animación de entrada */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.links {
+  text-align: center;
 }
 
-form {
-  animation: fadeIn 0.5s ease;
+.links a {
+  color: dodgerblue;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: #007bff;
+}
+
+.toggle-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
