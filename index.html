@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./public/style.css" />
     <title>App</title>
   </head>
 
   <body style="position: relative">
     <div class="container">
       <section class="form-btn">
-        <button onclick="mostrarLogin()" id="boton-login" class="btn">Login</button>
-        <button onclick="mostrarRegistro()" id="boton-registro" class="btn">Registro</button>
+        <button onclick="mostrarLogin()" id="boton-login" class="btn">
+          Login
+        </button>
+        <button onclick="mostrarRegistro()" id="boton-registro" class="btn">
+          Registro
+        </button>
       </section>
       <h2 id="form-title">Iniciar Sesión</h2>
       <form action="./view/panel.html" id="login-form" style="display: block">
@@ -43,7 +47,7 @@
           <input id="registro-correo" type="email" placeholder="Correo" />
         </div>
         <button id="btnRegistro" type="button" class="btn">
-          Iniciar Sesión
+          Registrar Usuario
         </button>
         <div class="links">
           <a href="#">¿Olvidaste tu contraseña?</a>
@@ -51,6 +55,6 @@
       </form>
     </div>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./public/script.js"></script>
   </body>
 </html>
