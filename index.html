@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>App</title>
-</head>
+  <body style="position: relative">
+    <div class="container">
+      <section class="form-btn">
+        <button onclick="mostrarLogin()" id="boton-login" class="btn">Login</button>
+        <button onclick="mostrarRegistro()" id="boton-registro" class="btn">Registro</button>
+      </section>
+      <h2 id="form-title">Iniciar Sesión</h2>
+      <form action="./view/panel.html" id="login-form" style="display: block">
+        <div class="input-group">
+          <input id="usuario" type="text" placeholder="Usuario" />
+        </div>
+        <div class="input-group">
+          <input id="contrasena" type="password" placeholder="Contraseña" />
+        </div>
+        <button id="btnIniciar" type="button" class="btn">
+          Iniciar Sesión
+        </button>
+        <div class="links">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+      <form action="./view/panel.html" id="register-form" style="display: none">
+        <div class="input-group">
+          <input id="registro-usuario" type="text" placeholder="Usuario" />
+        </div>
+        <div class="input-group">
+          <input
+            id="registro-ontrasena"
+            type="password"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="input-group">
+          <input id="registro-correo" type="email" placeholder="Correo" />
+        </div>
+        <button id="btnRegistro" type="button" class="btn">
+          Iniciar Sesión
+        </button>
+        <div class="links">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+    </div>
 
-<body style="position: relative">
-  <div class="container">
-    <h2 id="form-title">Iniciar Sesión</h2>
-    <form action="./view/panel.html" id="login-form" style="display: block">
-      <div class="input-group">
-        <input id="usuario" type="text" placeholder="Usuario" />
-      </div>
-      <div class="input-group">
-        <input id="contrasena" type="password" placeholder="Contraseña" />
-      </div>
-      <button id="btnIniciar" type="button" class="btn">Iniciar Sesión</button>
-      <div class="links">
-        <a href="#">¿Olvidaste tu contraseña?</a>
-      </div>
-    </form>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

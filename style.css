@@ -44,6 +44,13 @@ h2 {
   transition: border-color 0.3s ease-in-out;
 }
 
+.form-btn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2%;
+}
+
 .input-group input:focus {
   outline: none;
   border-color: dodgerblue;
