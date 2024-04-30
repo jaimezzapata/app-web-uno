@@ -1,8 +1,7 @@
 import usuarios from "../model/ModelUsuario.js";
 
 export function iniciarSesion() {
-  console.log("Iniciando Sesion...");
-  console.log(usuarios);
+    console.log('Inicio de sesión correcto...')
 }
 
 export function registrarUsuario() {

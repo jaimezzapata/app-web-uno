@@ -2,6 +2,9 @@ import { iniciarSesion } from "../controller/ControllerUsuario.js";
 
 iniciarSesion()
 
+document.getElementById('boton-registro').addEventListener('click', mostrarRegistro)
+document.getElementById('boton-login').addEventListener('click', mostrarLogin)
+
 function mostrarLogin() {
   console.log("Formulario Login");
   document.getElementById("form-title").textContent = "Iniciar Sesión";
