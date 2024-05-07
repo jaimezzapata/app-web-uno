@@ -1,9 +1,36 @@
 import { iniciarSesion } from "../controller/ControllerUsuario.js";
 
-iniciarSesion()
+iniciarSesion();
+let inputs = document.querySelectorAll("input");
+const validarCampos = (e) => {
+  switch (e.target.name) {
+    case "usuario":
+      console.log(e);
+      break;
 
-document.getElementById('boton-registro').addEventListener('click', mostrarRegistro)
-document.getElementById('boton-login').addEventListener('click', mostrarLogin)
+    default:
+      break;
+  }
+};
+inputs.forEach((input) => {
+  input.addEventListener("keyup", validarCampos);
+});
+console.log(inputs);
+
+/* querySelector(#id) */
+/* querySelector(etiqueta) */
+/* querySelector(.clase) */
+
+/* getElementById() */
+/* getElementsByTagName() */
+/* getElementsByClassName() */
+
+/* querySelectorAll() */
+
+document
+  .getElementById("boton-registro")
+  .addEventListener("click", mostrarRegistro);
+document.getElementById("boton-login").addEventListener("click", mostrarLogin);
 
 function mostrarLogin() {
   console.log("Formulario Login");

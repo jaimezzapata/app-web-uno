@@ -20,3 +20,8 @@ Modulos
     Importaciones
     Exportaciones
         -
+
+
+
+Expresiones Regulares
+    -> Patrón de caracteres que validan un patron de datos
