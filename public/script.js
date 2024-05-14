@@ -1,14 +1,25 @@
 import { iniciarSesion } from "../controller/ControllerUsuario.js";
 
 iniciarSesion();
+
 let inputs = document.querySelectorAll("input");
+let user = /^[A-Z]{4,10}$/;
+let password = /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[\W_]).{5,10}$/;
+
 const validarCampos = (e) => {
   switch (e.target.name) {
     case "usuario":
-      console.log(e);
+      if (user.test(e.target.value)) {
+        console.log("Pasó la validación del usuario");
+        document.getElementById("usuario").style.borderColor = "green";
+      } else {
+        document.getElementById("usuario").style.borderColor = "red";
+      }
       break;
-
-    default:
+    case "contrasena":
+      if (password.test(e.target.value)) {
+        console.log("Pasó la validación de contraseña");
+      }
       break;
   }
 };
