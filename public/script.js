@@ -1,5 +1,8 @@
-import { iniciarSesion } from "../controller/ControllerUsuario.js";
+import { iniciarSesion, registrarUsuario } from "../controller/ControllerUsuario.js";
 iniciarSesion();
+
+
+document.querySelector('#btnRegistro').addEventListener('click', registrarUsuario)
 
 let inputs = document.querySelectorAll("input");
 let user = /^[A-Z]{4,10}$/;
