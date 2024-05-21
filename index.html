@@ -14,12 +14,24 @@
         <button id="boton-registro" class="btn">Registro</button>
       </section>
       <h2 id="form-title">Iniciar Sesión</h2>
-      <form action="./view/panel.html" id="login-form" style="display: block">
+      <form id="login-form" style="display: block">
         <div class="input-group">
-          <input name="usuario" id="usuario" type="text" placeholder="Usuario" />
+          <input
+            name="usuario"
+            id="usuario"
+            type="text"
+            placeholder="Usuario"
+          />
+          <span></span>
         </div>
         <div class="input-group">
-          <input name="contrasena" id="contrasena" type="text" placeholder="Contraseña" />
+          <input
+            name="contrasena"
+            id="contrasena"
+            type="text"
+            placeholder="Contraseña"
+          />
+          <span></span>
         </div>
         <button id="btnIniciar" type="button" class="btn">
           Iniciar Sesión
@@ -30,17 +42,31 @@
       </form>
       <form action="./view/panel.html" id="register-form" style="display: none">
         <div class="input-group">
-          <input id="registro-usuario" type="text" placeholder="Usuario" />
+          <input
+            id="registro-usuario"
+            name="registro-usuario"
+            type="text"
+            placeholder="Usuario"
+          />
+          <span></span>
         </div>
         <div class="input-group">
           <input
-            id="registro-ontrasena"
+            id="registro-contrasena"
+            name="registro-contrasena"
             type="password"
             placeholder="Contraseña"
           />
+          <span></span>
         </div>
         <div class="input-group">
-          <input id="registro-correo" type="email" placeholder="Correo" />
+          <input
+            id="registro-correo"
+            name="registro-correo"
+            type="email"
+            placeholder="Correo"
+          />
+          <span></span>
         </div>
         <button id="btnRegistro" type="button" class="btn">
           Registrar Usuario
