@@ -1,7 +1,11 @@
 import usuarios from "../model/ModelUsuario.js";
 
 export function iniciarSesion() {
-  console.log("Inicio de sesión correcto...");
+  if (buscarUsuario()) {
+    window.location.href = 'https://github.com/jaimezzapata/app-web-uno'
+  } else {
+    console.log('Usuario y/o contraseña incorrecto')
+  }
 }
 
 const crearUsuario = () => {
