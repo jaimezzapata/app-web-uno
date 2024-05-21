@@ -25,3 +25,7 @@ Modulos
 
 Expresiones Regulares
     -> Patrón de caracteres que validan un patron de datos
+
+
+
+map, forEach, find, filter, some
