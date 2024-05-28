@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/panel.css" />
     <title>Panel de Control</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header-container" id="login-panel">
-        <h2>Bienvenido al Panel de Control</h2>
-        <button id="btnCrearRegistro" class="btn">Crear Registro</button>
-        <button id="btnListarRegistros" class="btn">Listar Registros</button>
-        <div class="links">
-            <a href="#">Cerrar Sesión</a>
-        </div>
+      <h2>Bienvenido al Panel de Control</h2>
+      <button id="btnCrearRegistro" class="btn">Crear Registro</button>
+      <button id="btnListarRegistros" class="btn">Listar Registros</button>
+      <div class="links">
+        <a href="#">Cerrar Sesión</a>
+      </div>
     </header>
 
     <!-- Formulario para crear registro -->
     <div class="container" id="create-form" style="display: none">
-        <h2>Crear Registro</h2>
-        <form>
-            <div class="input-group">
-                <input type="text" placeholder="Nombre" required />
-            </div>
-            <div class="input-group">
-                <input type="text" placeholder="Email" required />
-            </div>
-            <button type="submit" class="btn">Crear</button>
-        </form>
-        <div class="links">
-            <a href="#">Volver al Panel de Control</a>
+      <h2>Crear Registro</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Nombre" required />
         </div>
+        <div class="input-group">
+          <input type="text" placeholder="Email" required />
+        </div>
+        <button type="submit" class="btn">Crear</button>
+      </form>
+      <div class="links">
+        <a href="#">Volver al Panel de Control</a>
+      </div>
     </div>
 
     <!-- Lista de registros -->
     <div class="container" id="list" style="display: none">
-        <h2>Listar Registros</h2>
-        <ul>
-            <li>Registro 1</li>
-            <li>Registro 2</li>
-            <li>Registro 3</li>
-        </ul>
-        <div class="links">
-            <a href="#">Volver al Panel de Control</a>
-        </div>
+      <h2>Listar Registros</h2>
+      <section>
+        <h4>Nombre Producto: TV</h4>
+        <p>Precio: 15000</p>
+        <
+        p>Marca: Samsung</p>
+        <p>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          ipsam nisi, corporis minus eaque unde ducimus cumque eos consequuntur
+          assumenda cupiditate modi eligendi perspiciatis minima earum suscipit
+          accusantium fugiat dolorum.
+        </p>
+        <section></section>
+      </section>
+      <div class="links">
+        <a href="#">Volver al Panel de Control</a>
+      </div>
     </div>
 
     <script type="module" src="./assets/script.js"></script>
-</body>
-
+  </body>
 </html>
