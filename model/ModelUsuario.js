@@ -1,11 +1,11 @@
 let usuarios = [
   {
-    usuario: "admin",
-    contrasena: "2134",
+    usuario: "ADMIN",
+    contrasena: "1234",
     correo: "correoq@correo.com",
   },
   {
-    usuario: "cliente",
+    usuario: "CLIENTE",
     contrasena: "1234",
     correo: "correoq@gmail.com.com",
   },

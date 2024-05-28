@@ -1,82 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/style.css" />
-    <title>App</title>
-  </head>
 
-  <body style="position: relative">
-    <div class="container">
-      <section class="form-btn">
-        <button id="boton-login" class="btn">Login</button>
-        <button id="boton-registro" class="btn">Registro</button>
-      </section>
-      <h2 id="form-title">Iniciar Sesión</h2>
-      <form id="login-form" style="display: block">
-        <div class="input-group">
-          <input
-            name="usuario"
-            id="usuario"
-            type="text"
-            placeholder="Usuario"
-          />
-          <span></span>
-        </div>
-        <div class="input-group">
-          <input
-            name="contrasena"
-            id="contrasena"
-            type="text"
-            placeholder="Contraseña"
-          />
-          <span></span>
-        </div>
-        <button id="btnIniciar" type="button" class="btn">
-          Iniciar Sesión
-        </button>
-        <div class="links">
-          <a href="#">¿Olvidaste tu contraseña?</a>
-        </div>
-      </form>
-      <form action="./view/panel.html" id="register-form" style="display: none">
-        <div class="input-group">
-          <input
-            id="registro-usuario"
-            name="registro-usuario"
-            type="text"
-            placeholder="Usuario"
-          />
-          <span></span>
-        </div>
-        <div class="input-group">
-          <input
-            id="registro-contrasena"
-            name="registro-contrasena"
-            type="password"
-            placeholder="Contraseña"
-          />
-          <span></span>
-        </div>
-        <div class="input-group">
-          <input
-            id="registro-correo"
-            name="registro-correo"
-            type="email"
-            placeholder="Correo"
-          />
-          <span></span>
-        </div>
-        <button id="btnRegistro" type="button" class="btn">
-          Registrar Usuario
-        </button>
-        <div class="links">
-          <a href="#">¿Olvidaste tu contraseña?</a>
-        </div>
-      </form>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/style.css" />
+  <title>App</title>
+</head>
 
-    <script type="module" src="./public/script.js"></script>
-  </body>
+<body style="position: relative">
+  <div class="container">
+    <section class="form-btn">
+      <button id="boton-login" class="btn">Login</button>
+      <button id="boton-registro" class="btn">Registro</button>
+    </section>
+    <h2 id="form-title">Iniciar Sesión</h2>
+    <form id="login-form" style="display: block">
+      <div class="input-group">
+        <input name="usuario" id="usuario" type="text" placeholder="Usuario" />
+        <span></span>
+      </div>
+      <div class="input-group">
+        <input name="contrasena" id="contrasena" type="text" placeholder="Contraseña" />
+        <span></span>
+      </div>
+      <button id="btnIniciar" type="button" class="btn">
+        Iniciar Sesión
+      </button>
+      <div class="links">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+    </form>
+    <form action="./view/panel.html" id="register-form" style="display: none">
+      <div class="input-group">
+        <input id="registro-usuario" name="registro-usuario" type="text" placeholder="Usuario" />
+        <span></span>
+      </div>
+      <div class="input-group">
+        <input id="registro-contrasena" name="registro-contrasena" type="password" placeholder="Contraseña" />
+        <span></span>
+      </div>
+      <div class="input-group">
+        <input id="registro-correo" name="registro-correo" type="email" placeholder="Correo" />
+        <span></span>
+      </div>
+      <button id="btnRegistro" type="button" class="btn">
+        Registrar Usuario
+      </button>
+      <div class="links">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+    </form>
+  </div>
+
+  <script type="module" src="./public/script.js"></script>
+</body>
+
 </html>
